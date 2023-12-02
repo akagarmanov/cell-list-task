@@ -6,6 +6,7 @@ def test_open_page(browser):
     CardsTests = CellListHelpers(browser)
     CardsTests.open_page(CardsTests.PAGE_URL)
 
+
     assert CardsTests.element_by_xpath(CardsTests.XPATH_TEXT % CardsTests.XPATH_NAME_OF_PAGE)
 
 
