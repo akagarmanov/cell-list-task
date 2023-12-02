@@ -10,6 +10,8 @@ class CellListPage:
     CSS_COUNTER = "td > .gwt-HTML"
     CSS_CARDS_LIST = ".CMWVMEC-p-b"
     CSS_CATEGORY = "tr:nth-child(4) .gwt-ListBox"
+    XPATH_NAME_OF_PAGE = "Cell List"
+    XPATH_TEXT = "//*[text()='%s']"
 
     TEST_CATEGORY = ["Family", "Friends", "Coworkers", "Businesses", "Contacts"]
 
