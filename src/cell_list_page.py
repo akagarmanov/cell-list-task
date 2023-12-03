@@ -42,10 +42,12 @@ class CellListHelpers(BaseHelpers, CellListPage):
         return int(re.split(r"\s+", raw_text)[4])
 
     def create_contact(self, category):
+        # let's create som names using faker library
         fake = Faker()
         first_name = fake.first_name()
         last_name = fake.last_name()
 
+        # fullname of the person we need to check if card was created
         person = f"{first_name} {last_name}"
         address = fake.address()
         self.enter_text_into_field(self.CSS_FIRST_NAME, first_name)
