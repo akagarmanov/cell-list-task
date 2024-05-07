@@ -54,6 +54,6 @@ class CellListHelpers(BaseHelpers, CellListPage):
         self.enter_text_into_field(self.CSS_LAST_NAME, last_name)
         self.select_category(self.CSS_CATEGORY, category)
         self.enter_text_into_field(self.CSS_ADDRESS, address)
-        self.enter_date(self.CSS_BIRTHDAY, "November 15, 2023")
+        self.enter_date(self.CSS_BIRTHDAY, "November 16, 2023")
         self.click_button(self.CSS_CREATE_BUTTON)
         return person
